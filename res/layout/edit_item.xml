@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal" >
+    
+    <TextView 
+        android:id="@+id/type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="16sp"
+        android:text="@string/mobile"
+        />
+    
+    <EditText 
+        android:id="@+id/phnumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:layout_gravity="center_vertical"
+		android:paddingLeft="3dp"
+		android:inputType="text"
+		android:textSize="14sp"
+		android:layout_marginRight="5dp"
+        />
+    
+    <ImageView
+        android:id="@+id/delete_phone"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="right|center_vertical"
+        android:src="@drawable/calllog_calling_pop_close_click"
+        />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.graduation.contacts.ui.MainActivity" >
+
+    
+    <LinearLayout
+        android:id="@+id/controlbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        
+        >
+        
+        <com.graduation.contacts.view.TabButton  
+            android:id="@+id/dailpan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+        <com.graduation.contacts.view.TabButton 
+            android:id="@+id/calllog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+        <com.graduation.contacts.view.TabButton  
+            android:id="@+id/contacts"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+        
+    </LinearLayout>
+
+    
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/controlbar"
+        />
+</RelativeLayout>

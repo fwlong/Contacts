@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/history_call_in"
+        android:contentDescription="@string/incall_tag"
+    />
+    
+    <LinearLayout 
+        android:id="@+id/number_infos"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/tag"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        >
+        
+        <TextView 
+            android:id="@+id/contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/contact_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/dark_gravy"
+            />
+    </LinearLayout>
+
+    <ImageView 
+        android:id="@+id/toditail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/calllog_list_item_arrow_src"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@string/ditail_arrow"/>
+    
+    <TextView
+        android:id="@+id/call_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/toditail"
+        android:layout_marginRight="5dp"
+        android:textSize="12sp"
+        android:textColor="@color/gravy"
+        />"
+    
+</RelativeLayout>

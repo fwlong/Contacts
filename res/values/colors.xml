@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_gravy">#DDDDDD</color>
+    <color name="dark_gravy">#969696</color>
+    <color name="gravy">#C0C0C0</color>
+    <color name="list_selected_color">#99303030</color>
+    <color name="white_with_alpha">#FFFFFFFF</color>
+    <color name="green">#8800FF00</color>
+</resources>
